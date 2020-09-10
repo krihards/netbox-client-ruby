@@ -4,7 +4,9 @@ require 'netbox_client_ruby/api/ipam'
 require 'netbox_client_ruby/api/secrets'
 require 'netbox_client_ruby/api/tenancy'
 require 'netbox_client_ruby/api/virtualization'
+require 'netbox_client_ruby/api/extras'
 require 'netbox_client_ruby/communication'
+
 
 module NetboxClientRuby
   def self.circuits
@@ -29,5 +31,9 @@ module NetboxClientRuby
 
   def self.virtualization
     NetboxClientRuby::Virtualization
+  end
+
+  def self.extras
+    NetboxClientRuby::Extras
   end
 end
