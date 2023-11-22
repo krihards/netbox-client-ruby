@@ -13,6 +13,7 @@ module NetboxClientRuby
       vlans: Vlans,
       vlan_groups: VlanGroups,
       vrfs: Vrfs,
+      asns: Asns,
     }.each_pair do |method_name, class_name|
       NetboxClientRuby.load_collection(self, method_name, class_name)
     end
@@ -28,6 +29,7 @@ module NetboxClientRuby
       vlan: Vlan,
       vlan_group: VlanGroup,
       vrf: Vrf,
+      asn: Asn,
     }.each_pair do |method_name, class_name|
       NetboxClientRuby.load_entity(self, method_name, class_name)
     end
